@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="every">
+      <div class="navo">
+        <img src="./MEDIA/SAIL_BANK-removebg-preview.png" alt="" />
+      </div>
+      <div class="page">
+        <div class="textpage">
+          <div class="head">
+            <img id="yup" src="./MEDIA/SAIL_BANK-removebg-preview.png" alt="" />
+          </div>
+          <div class="bottom">
+            <img id="nope" src="./MEDIA/sail3.jpeg" alt="" />
+            <h2 id="blue">Sail Tech Admission</h2>
+            <p>
+              The Sail tech program is a program to teach, facilitate <br />
+              and guide youths above 23 years of age and under 27 <br />
+              years old in Lagos east senatorial district through their <br />
+              career path and go on to compete and become great <br />
+              techpreneurs in the nearest future.
+            </p>
+          </div>
+        </div>
+        <div class="formpage">
+          <form action="">
+            <div class="biotext">
+              <h2 id="black">Bio-Data Information</h2>
+              <div class="roform">
+                <h3 id="rod">
+                  Please provide the following information to capture to capture
+                  your bio-data. Fields marked with <span id="red">*</span> are
+                  required.
+                </h3>
+                <div class="realform">
+                  <label for="firstName"
+                    >First Name <span id="red">*</span></label
+                  >
+                  <input type="text" name="firstName" id="firstName" required/>
+                  <label for="middleName"
+                    >Middle Name <span id="red">*</span></label
+                  >
+                  <input type="text" name="middleName" id="middleName" required/>
+                  <label for="lastName"
+                    >Last Name <span id="red">*</span></label
+                  >
+                  <input type="text" name="lastName" id="lastName" required/>
+                  <label for="surname">Surname <span id="red">*</span></label>
+                  <input type="text" name="surname" id="surname" required/>
+                  <label for="gender">Gender <span id="red">*</span></label>
+                  <select name="gender" id="gender">
+                    <option value="gender">Male</option>
+                    <option value="gender">Female</option>
+                  </select>
+                  <label for="LG"
+                    >Local Government <span id="red">*</span></label
+                  >
+                  <select name="LG" id="LG">
+                    <option value="LG">IKORODU</option>
+                    <option value="SOMOLU">SOMOLU</option>
+                    <option value="EPE">EPE</option>
+                    <option value="IL">IBEJU-LEKKI</option>
+                    <option value="kosofe">KOSOFE</option>
+                  </select>
+                  <div class="main">
+                    <label for="DOB"
+                      >Date of Birth <span id="red">*</span></label
+                    >
+                    <br />
+                    <div class="input-container">
+                      <div class="col">
+                        <label for="day" class="day-label"></label>
+                        <input
+                          type="number"
+                          name="day"
+                          class="day"
+                          placeholder="DD"
+                          minlength="2"
+                          maxlength="2"
+                          required
+                        />
+                        <p class="day-error warning hide">Must be valid day</p>
+                      </div>
+                      <div class="col">
+                        <label for="month" class="month-label"></label>
+                        <input
+                          type="number"
+                          name="month"
+                          class="month"
+                          placeholder="MM"
+                          minlength="2"
+                          maxlength="2"
+                          required
+                        />
+                        <p class="month-error warning hide">
+                          Must be valid month
+                        </p>
+                      </div>
+                      <div class="col">
+                        <label for="year" class="year-label"></label>
+                        <input
+                          type="number"
+                          name="year"
+                          class="year"
+                          placeholder="YYYY"
+                          minlength="4"
+                          maxlength="4"
+                          required
+                        />
+                        <p class="year-error warning hide">
+                          Must be in the past
+                        </p>
+                      </div>
+                      <button type="submit" id="submit" class="submit">
+                        <a href="#">JOIN SAIL</a>
+                      </button>
+                    </div>
+
+                    <hr />
+                    <div class="result-container">
+                      <!--  -->
+                    </div>
+                    <div class="qualify"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script src="./main.js"></script>
+  </body>
+</html>
